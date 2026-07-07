@@ -162,12 +162,21 @@
   background: var(--card);
   border: 1px solid var(--border);
   transition: var(--transition);
+  position: relative;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: oklch(0.56 0.21 265 / 0.35);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -15px oklch(0.16 0.01 260 / 0.08), 0 0 0 1px oklch(0.56 0.21 265 / 0.15);
+    border-color: oklch(0.56 0.21 265 / 0.3);
   }
+}
+
+@utility text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, var(--color-primary), oklch(0.48 0.22 285));
 }
 
 @utility eyebrow {
@@ -207,4 +216,26 @@
 
 @utility animate-reveal {
   animation: reveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility icon-hover-animate {
+  transition: var(--transition);
+  .group:hover & {
+    transform: scale(1.12) rotate(4deg);
+  }
+}
+
+/* Hide Lovable / TanStack Devtools and tagger elements in development */
+#lovable-tagger,
+.lovable-tagger,
+[class*="lovable"],
+[id*="lovable"],
+#tanstack-devtools,
+.tanstack-devtools,
+#tanstack-router-devtools,
+button[aria-label*="devtools"] {
+  display: none !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }

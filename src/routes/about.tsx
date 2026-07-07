@@ -24,10 +24,10 @@ const VALUES = [
 ];
 
 const TEAM = [
-  { name: "Ali Hassan", role: "Founder & Product Lead", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80&auto=format&fit=crop" },
-  { name: "Sara Ahmed", role: "Design Director", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80&auto=format&fit=crop" },
-  { name: "Omar Khan", role: "Head of Engineering", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80&auto=format&fit=crop" },
-  { name: "Zara Malik", role: "AI Engineer", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=80&auto=format&fit=crop" },
+  { name: "Alex Hansen", role: "Founder & Product Lead", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80&auto=format&fit=crop" },
+  { name: "Sarah Adams", role: "Design Director", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80&auto=format&fit=crop" },
+  { name: "Oliver King", role: "Head of Engineering", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80&auto=format&fit=crop" },
+  { name: "Zoe Miller", role: "AI Engineer", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=80&auto=format&fit=crop" },
 ];
 
 const TIMELINE = [
@@ -61,7 +61,7 @@ function About() {
       <section className="py-16 md:py-20">
         <div className="container-page grid lg:grid-cols-2 gap-12 items-center">
           <div className="rounded-3xl overflow-hidden aspect-[5/4]">
-            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1200&q=80&auto=format&fit=crop" alt="Modern office space" loading="lazy" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80&auto=format&fit=crop" alt="Team collaborating on software design" loading="lazy" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="eyebrow mb-4">Our story</div>

@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Twitter, Linkedin, Github, Instagram, Mail, Phone, MapPin } from "lucide-react";
-import logoAsset from "@/assets/spidermen-logo-full.png.asset.json";
 
 export function Footer() {
   return (
@@ -8,7 +7,7 @@ export function Footer() {
       <div className="container-page py-16 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-4">
           <div className="mb-5">
-            <img src={logoAsset.url} alt="Spidermen Web Design" className="h-20 w-auto object-contain" />
+            <img src="/logo.svg" alt="Spidermen Web Design" className="h-32 md:h-40 w-auto object-contain" />
           </div>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
             We build high-performance websites, AI applications, and custom business software for companies worldwide.

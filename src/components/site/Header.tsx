@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logoAsset from "@/assets/spidermen-logo-full.png.asset.json";
 
 export const NAV_LINKS = [
   { label: "Home", to: "/" as const },
@@ -34,9 +33,9 @@ export function Header() {
           : "bg-white/60 backdrop-blur-sm"
       }`}
     >
-      <div className="container-page flex items-center justify-between h-20 md:h-24">
+      <div className="container-page flex items-center justify-between h-24 md:h-28">
         <Link to="/" className="flex items-center min-w-0" onClick={() => setOpen(false)} aria-label="Spidermen Web Design">
-          <img src={logoAsset.url} alt="Spidermen Web Design" className="h-14 md:h-16 w-auto object-contain" />
+          <img src="/logo.svg" alt="Spidermen Web Design" className="h-22 md:h-26 w-auto object-contain py-1.5" />
         </Link>
 
         <nav className="hidden xl:flex items-center gap-1">

@@ -2,7 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Code2, Sparkles, ShoppingBag, Cpu, Users, Briefcase, Database, Layout, Star, Zap, Shield, Search, Smartphone, Headphones, Palette } from "lucide-react";
 import { SectionHeading } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
-import heroImage from "@/assets/hero-illustration.jpg";
+import { HeroIllustration } from "@/components/site/HeroIllustration";
+import { SpiderWebBg } from "@/components/site/SpiderWebBg";
 import { useEffect, useRef, useState } from "react";
 
 export const Route = createFileRoute("/")({
@@ -51,7 +52,7 @@ const PROCESS = [
 
 const PORTFOLIO = [
   { title: "Nexus Corporate Portal", cat: "Corporate", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80&auto=format&fit=crop" },
-  { title: "Urban Threads Shopify", cat: "eCommerce", img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80&auto=format&fit=crop" },
+  { title: "Urban Threads Shopify", cat: "eCommerce", img: "https://images.unsplash.com/photo-1557821552-17105176677c?w=900&q=80&auto=format&fit=crop" },
   { title: "Insight AI Dashboard", cat: "AI Platform", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop" },
 ];
 
@@ -68,10 +69,10 @@ const FAQ_PREVIEW = [
 ];
 
 const LATEST = [
-  { title: "Saffron Table", cat: "Restaurant", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80&auto=format&fit=crop" },
-  { title: "PeopleFlow HRM", cat: "HRM", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80&auto=format&fit=crop" },
-  { title: "SwiftPOS", cat: "POS", img: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&q=80&auto=format&fit=crop" },
-  { title: "Studio Kai", cat: "Portfolio", img: "https://images.unsplash.com/photo-1487611459768-bd414656ea10?w=800&q=80&auto=format&fit=crop" },
+  { title: "Saffron Table", cat: "Restaurant", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop" },
+  { title: "PeopleFlow HRM", cat: "HRM", img: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80&auto=format&fit=crop" },
+  { title: "SwiftPOS", cat: "POS", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80&auto=format&fit=crop" },
+  { title: "Studio Kai", cat: "Portfolio", img: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80&auto=format&fit=crop" },
 ];
 
 function useInView<T extends Element>() {
@@ -106,10 +107,22 @@ function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
 }
 
 function Home() {
+  const introSec = useInView<HTMLDivElement>();
+  const servicesSec = useInView<HTMLDivElement>();
+  const whyUsSec = useInView<HTMLDivElement>();
+  const techSec = useInView<HTMLDivElement>();
+  const portfolioSec = useInView<HTMLDivElement>();
+  const processSec = useInView<HTMLDivElement>();
+  const statsSec = useInView<HTMLDivElement>();
+  const testimonialsSec = useInView<HTMLDivElement>();
+  const faqSec = useInView<HTMLDivElement>();
+  const latestSec = useInView<HTMLDivElement>();
+
   return (
     <>
       {/* HERO */}
       <section className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
+        <SpiderWebBg />
         <div className="absolute inset-0 grid-bg opacity-60 [mask-image:radial-gradient(ellipse_60%_60%_at_60%_20%,black,transparent)]" />
         <div className="container-page relative grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-reveal">
@@ -135,7 +148,7 @@ function Home() {
             </div>
           </div>
           <div className="relative">
-            <img src={heroImage} alt="Modern software agency dashboard illustration" width={1400} height={1200} className="w-full h-auto rounded-3xl" />
+            <HeroIllustration />
           </div>
         </div>
       </section>
@@ -153,7 +166,7 @@ function Home() {
       </section>
 
       {/* INTRO */}
-      <section className="py-20 md:py-28">
+      <section ref={introSec.ref} className={`py-20 md:py-28 transition-all duration-1000 transform ${introSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="eyebrow mb-4">Who we are</div>
@@ -173,20 +186,20 @@ function Home() {
             </Link>
           </div>
           <div className="relative aspect-[5/4] rounded-3xl overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop" alt="Team collaborating in a modern office" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80&auto=format&fit=crop" alt="Team collaborating on software design" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section className="py-20 md:py-28 bg-surface">
+      <section ref={servicesSec.ref} className={`py-20 md:py-28 bg-surface transition-all duration-1000 transform ${servicesSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page">
           <SectionHeading eyebrow="What we do" title="Services built for growing businesses" subtitle="From marketing sites to full-stack platforms — end-to-end delivery." />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {SERVICES.map((s) => (
               <Link key={s.title} to={s.to} className="card-lift rounded-2xl p-7 group">
-                <div className="h-11 w-11 rounded-xl grid place-items-center bg-primary-soft text-primary mb-5 group-hover:scale-110 transition-transform">
-                  <s.icon className="h-5 w-5" />
+                <div className="h-11 w-11 rounded-xl grid place-items-center bg-primary-soft text-primary mb-5 transition-transform duration-300">
+                  <s.icon className="h-5 w-5 icon-hover-animate" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{s.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
@@ -201,14 +214,14 @@ function Home() {
       </section>
 
       {/* WHY US */}
-      <section className="py-20 md:py-28">
+      <section ref={whyUsSec.ref} className={`py-20 md:py-28 transition-all duration-1000 transform ${whyUsSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page">
           <SectionHeading eyebrow="Why us" title="Why businesses choose Spidermen" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {WHY.map((w) => (
-              <div key={w.label} className="card-lift rounded-2xl p-6">
-                <div className="h-10 w-10 rounded-lg grid place-items-center bg-primary-soft text-primary mb-4">
-                  <w.icon className="h-5 w-5" />
+              <div key={w.label} className="card-lift rounded-2xl p-6 group">
+                <div className="h-10 w-10 rounded-lg grid place-items-center bg-primary-soft text-primary mb-4 transition-transform duration-300">
+                  <w.icon className="h-5 w-5 icon-hover-animate" />
                 </div>
                 <div className="text-sm font-semibold">{w.label}</div>
                 <p className="mt-1 text-xs text-muted-foreground leading-relaxed">{w.desc}</p>
@@ -219,7 +232,7 @@ function Home() {
       </section>
 
       {/* TECH */}
-      <section className="py-20 md:py-28 bg-surface">
+      <section ref={techSec.ref} className={`py-20 md:py-28 bg-surface transition-all duration-1000 transform ${techSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page">
           <SectionHeading eyebrow="Our stack" title="Modern technologies we work with" subtitle="Battle-tested tools we use to ship reliable products." />
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
@@ -234,7 +247,7 @@ function Home() {
       </section>
 
       {/* PORTFOLIO PREVIEW */}
-      <section className="py-20 md:py-28">
+      <section ref={portfolioSec.ref} className={`py-20 md:py-28 transition-all duration-1000 transform ${portfolioSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page">
           <SectionHeading eyebrow="Portfolio preview" title="Selected recent work" />
           <div className="grid md:grid-cols-3 gap-6">
@@ -257,13 +270,13 @@ function Home() {
       </section>
 
       {/* PROCESS */}
-      <section className="py-20 md:py-28 bg-surface">
+      <section ref={processSec.ref} className={`py-20 md:py-28 bg-surface transition-all duration-1000 transform ${processSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page">
           <SectionHeading eyebrow="How we work" title="A proven development process" />
           <div className="grid md:grid-cols-4 gap-5">
             {PROCESS.map((p) => (
-              <div key={p.n} className="card-lift rounded-2xl p-6 bg-white">
-                <div className="text-3xl font-display font-bold text-primary/30">{p.n}</div>
+              <div key={p.n} className="card-lift rounded-2xl p-6 bg-white group">
+                <div className="text-3xl font-display font-bold text-primary/30 group-hover:text-primary/70 transition-colors duration-300">{p.n}</div>
                 <h3 className="mt-2 font-semibold">{p.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
               </div>
@@ -276,7 +289,7 @@ function Home() {
       </section>
 
       {/* STATS */}
-      <section className="py-20 md:py-24">
+      <section ref={statsSec.ref} className={`py-20 md:py-24 transition-all duration-1000 transform ${statsSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { v: 100, s: "+", l: "Projects Completed" },
@@ -293,7 +306,7 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-20 md:py-28 bg-surface">
+      <section ref={testimonialsSec.ref} className={`py-20 md:py-28 bg-surface transition-all duration-1000 transform ${testimonialsSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page">
           <SectionHeading eyebrow="Kind words" title="What clients say" />
           <div className="grid md:grid-cols-3 gap-6">
@@ -314,7 +327,7 @@ function Home() {
       </section>
 
       {/* FAQ PREVIEW */}
-      <section className="py-20 md:py-28">
+      <section ref={faqSec.ref} className={`py-20 md:py-28 transition-all duration-1000 transform ${faqSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <div className="eyebrow mb-4">FAQ</div>
@@ -324,7 +337,7 @@ function Home() {
           </div>
           <div className="space-y-3">
             {FAQ_PREVIEW.map((f) => (
-              <div key={f.q} className="rounded-2xl border border-border p-6">
+              <div key={f.q} className="rounded-2xl border border-border p-6 hover:border-primary transition-colors duration-300">
                 <div className="font-semibold">{f.q}</div>
                 <p className="mt-2 text-sm text-muted-foreground">{f.a}</p>
               </div>
@@ -334,7 +347,7 @@ function Home() {
       </section>
 
       {/* LATEST PROJECTS */}
-      <section className="py-20 md:py-28 bg-surface">
+      <section ref={latestSec.ref} className={`py-20 md:py-28 bg-surface transition-all duration-1000 transform ${latestSec.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
         <div className="container-page">
           <SectionHeading eyebrow="Latest projects" title="Fresh from the studio" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">

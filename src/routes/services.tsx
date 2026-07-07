@@ -44,7 +44,7 @@ const SERVICES: Service[] = [
     benefits: ["Reduce manual work", "24/7 support", "Smarter products"],
     features: ["OpenAI/Anthropic", "RAG pipelines", "Custom agents", "Voice AI"],
     process: ["Use case", "Prototype", "Integrate", "Iterate"],
-    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Cog,
@@ -53,7 +53,7 @@ const SERVICES: Service[] = [
     benefits: ["Save hours weekly", "Fewer errors", "Better visibility"],
     features: ["Zapier/Make", "Custom scripts", "API integrations", "Dashboards"],
     process: ["Audit", "Design flow", "Build", "Monitor"],
-    img: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: ShoppingBag,
@@ -62,7 +62,7 @@ const SERVICES: Service[] = [
     benefits: ["Higher AOV", "Better UX", "SEO friendly"],
     features: ["Custom themes", "App integration", "Speed optimization", "Checkout"],
     process: ["Audit", "Design", "Build", "Optimize"],
-    img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1557821552-17105176677c?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Globe,
@@ -71,7 +71,7 @@ const SERVICES: Service[] = [
     benefits: ["Full editorial control", "Scalable", "SEO ready"],
     features: ["Custom themes", "WooCommerce", "Maintenance", "Security"],
     process: ["Plan", "Design", "Develop", "Launch"],
-    img: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1487611459768-bd414656ea10?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Layout,
@@ -89,7 +89,7 @@ const SERVICES: Service[] = [
     benefits: ["Rapid launch", "Client-editable", "Booking ready"],
     features: ["Custom design", "Booking systems", "Ecommerce", "SEO"],
     process: ["Plan", "Design", "Build", "Train"],
-    img: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Users,
@@ -98,7 +98,7 @@ const SERVICES: Service[] = [
     benefits: ["Close more deals", "Better handoffs", "Actionable data"],
     features: ["Pipelines", "Automation", "Reporting", "Integrations"],
     process: ["Map workflow", "Prototype", "Build", "Rollout"],
-    img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Briefcase,
@@ -107,7 +107,7 @@ const SERVICES: Service[] = [
     benefits: ["Streamlined HR ops", "Employee self-service", "Compliance ready"],
     features: ["Attendance", "Payroll", "Leaves", "Performance"],
     process: ["Discovery", "Design", "Build", "Train"],
-    img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Database,
@@ -125,7 +125,7 @@ const SERVICES: Service[] = [
     benefits: ["Single source of truth", "Cross-team visibility", "Compliance"],
     features: ["Finance", "Inventory", "HR", "Reports"],
     process: ["Discovery", "Modules", "Build", "Rollout"],
-    img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Zap,
@@ -161,7 +161,7 @@ const SERVICES: Service[] = [
     benefits: ["Peace of mind", "Zero downtime", "Fresh content"],
     features: ["Updates", "Backups", "Uptime", "Support"],
     process: ["Audit", "Onboard", "Maintain", "Report"],
-    img: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Search,
@@ -170,7 +170,7 @@ const SERVICES: Service[] = [
     benefits: ["More traffic", "Better rankings", "Higher revenue"],
     features: ["Audit", "On-page", "Technical", "Content"],
     process: ["Audit", "Strategy", "Implement", "Measure"],
-    img: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Zap,
@@ -179,7 +179,7 @@ const SERVICES: Service[] = [
     benefits: ["Better UX", "Higher SEO", "More conversions"],
     features: ["CWV audit", "Image opt", "CDN", "Caching"],
     process: ["Audit", "Prioritize", "Optimize", "Verify"],
-    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
   },
   {
     icon: Plug,
@@ -197,7 +197,7 @@ const SERVICES: Service[] = [
     benefits: ["Scalable", "Reliable", "Cost efficient"],
     features: ["AWS/Vercel", "CI/CD", "IaC", "Monitoring"],
     process: ["Assess", "Architect", "Deploy", "Optimize"],
-    img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80&auto=format&fit=crop",
   },
 ];
 

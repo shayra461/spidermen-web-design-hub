@@ -19,11 +19,11 @@ export const Route = createFileRoute("/blog")({
 
 const POSTS = [
   { title: "Why every SaaS needs an AI copilot in 2026", cat: "AI", date: "Jun 24, 2026", read: "8 min", excerpt: "Copilots aren't a feature anymore — they're table stakes. Here's how we architect one that ships.", img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1000&q=80&auto=format&fit=crop" },
-  { title: "The complete guide to Core Web Vitals in 2026", cat: "Performance", date: "Jun 12, 2026", read: "12 min", excerpt: "A field-tested playbook for hitting green scores without rewriting your app.", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&q=80&auto=format&fit=crop" },
+  { title: "The complete guide to Core Web Vitals in 2026", cat: "Performance", date: "Jun 12, 2026", read: "12 min", excerpt: "A field-tested playbook for hitting green scores without rewriting your app.", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=80&auto=format&fit=crop" },
   { title: "Design systems that scale from 1 to 100 pages", cat: "Design", date: "May 30, 2026", read: "10 min", excerpt: "Tokens, primitives, and the small decisions that keep design systems from collapsing.", img: "https://images.unsplash.com/photo-1561070791-2526d30994b8?w=1000&q=80&auto=format&fit=crop" },
-  { title: "Choosing between Shopify and custom eCommerce", cat: "eCommerce", date: "May 18, 2026", read: "7 min", excerpt: "The honest tradeoffs — and the moment it makes sense to leave Shopify behind.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&q=80&auto=format&fit=crop" },
-  { title: "Building an internal CRM without falling into feature creep", cat: "Product", date: "Apr 29, 2026", read: "9 min", excerpt: "How we scope custom CRMs to ship in weeks — and stay useful for years.", img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1000&q=80&auto=format&fit=crop" },
-  { title: "SEO for JavaScript apps: what actually works", cat: "SEO", date: "Apr 10, 2026", read: "11 min", excerpt: "SSR, structured data, and the myths about JS SEO you can safely ignore.", img: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1000&q=80&auto=format&fit=crop" },
+  { title: "Choosing between Shopify and custom eCommerce", cat: "eCommerce", date: "May 18, 2026", read: "7 min", excerpt: "The honest tradeoffs — and the moment it makes sense to leave Shopify behind.", img: "https://images.unsplash.com/photo-1557821552-17105176677c?w=1000&q=80&auto=format&fit=crop" },
+  { title: "Building an internal CRM without falling into feature creep", cat: "Product", date: "Apr 29, 2026", read: "9 min", excerpt: "How we scope custom CRMs to ship in weeks — and stay useful for years.", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=80&auto=format&fit=crop" },
+  { title: "SEO for JavaScript apps: what actually works", cat: "SEO", date: "Apr 10, 2026", read: "11 min", excerpt: "SSR, structured data, and the myths about JS SEO you can safely ignore.", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&q=80&auto=format&fit=crop" },
 ];
 
 function Blog() {

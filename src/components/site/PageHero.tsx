@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { SpiderWebBg } from "./SpiderWebBg";
 
 export function PageHero({
   eyebrow,
@@ -13,6 +14,7 @@ export function PageHero({
 }) {
   return (
     <section className="relative pt-32 md:pt-40 pb-16 md:pb-20 overflow-hidden">
+      <SpiderWebBg />
       <div className="absolute inset-0 grid-bg opacity-70 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]" />
       <div className="container-page relative">
         <div className="max-w-3xl">
