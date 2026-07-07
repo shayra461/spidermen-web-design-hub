@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logoAsset from "@/assets/spidermen-logo.png.asset.json";
+import logoAsset from "@/assets/spidermen-logo-full.png.asset.json";
 
 export const NAV_LINKS = [
   { label: "Home", to: "/" as const },
@@ -34,13 +34,9 @@ export function Header() {
           : "bg-white/60 backdrop-blur-sm"
       }`}
     >
-      <div className="container-page flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="flex items-center gap-2.5 min-w-0" onClick={() => setOpen(false)}>
-          <img src={logoAsset.url} alt="Spidermen Web Design" className="h-9 w-9 md:h-10 md:w-10 object-contain" width={40} height={40} />
-          <div className="hidden sm:flex flex-col leading-tight">
-            <span className="font-display font-bold text-sm md:text-base tracking-tight">Spidermen</span>
-            <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Web Design</span>
-          </div>
+      <div className="container-page flex items-center justify-between h-20 md:h-24">
+        <Link to="/" className="flex items-center min-w-0" onClick={() => setOpen(false)} aria-label="Spidermen Web Design">
+          <img src={logoAsset.url} alt="Spidermen Web Design" className="h-14 md:h-16 w-auto object-contain" />
         </Link>
 
         <nav className="hidden xl:flex items-center gap-1">
