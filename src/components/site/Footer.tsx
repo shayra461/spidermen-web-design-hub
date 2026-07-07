@@ -1,18 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { Twitter, Linkedin, Github, Instagram, Mail, Phone, MapPin } from "lucide-react";
-import logoAsset from "@/assets/spidermen-logo.png.asset.json";
+import logoAsset from "@/assets/spidermen-logo-full.png.asset.json";
 
 export function Footer() {
   return (
     <footer className="bg-surface border-t border-border mt-24">
       <div className="container-page py-16 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-4">
-          <div className="flex items-center gap-2.5 mb-5">
-            <img src={logoAsset.url} alt="Spidermen Web Design" className="h-10 w-10 object-contain" width={40} height={40} />
-            <div className="flex flex-col leading-tight">
-              <span className="font-display font-bold">Spidermen</span>
-              <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Web Design</span>
-            </div>
+          <div className="mb-5">
+            <img src={logoAsset.url} alt="Spidermen Web Design" className="h-20 w-auto object-contain" />
           </div>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
             We build high-performance websites, AI applications, and custom business software for companies worldwide.

@@ -16,8 +16,8 @@ export function CTASection({
           <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-primary/30 blur-3xl" />
           <div className="relative grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">{title}</h2>
-              <p className="mt-4 text-white/70 max-w-lg">{subtitle}</p>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">{title}</h2>
+              <p className="mt-4 text-white/80 max-w-lg">{subtitle}</p>
             </div>
             <div className="flex md:justify-end gap-3 flex-wrap">
               <Link to="/contact" className="btn-primary">
